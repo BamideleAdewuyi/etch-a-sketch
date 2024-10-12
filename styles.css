@@ -2,6 +2,6 @@
   outline: 1px solid red;
 }
 
-.square {
+#container {
   display: flex;
 }
