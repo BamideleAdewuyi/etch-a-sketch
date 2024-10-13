@@ -25,7 +25,12 @@ function createGrid(squares) {
         newSquare.addEventListener("mouseover", () => {
             const currentOpacity = newSquare.style.opacity;
             newSquare.style.background = `rgb(${randomRGB()}, ${randomRGB()}, ${randomRGB()})`;
-            newSquare.style.opacity = Number(newSquare.style.opacity + 0.1);
+            if (currentOpacity) {
+                newSquare.style.opacity = Number(currentOpacity) + 0.1;
+
+            } else {
+                newSquare.style.opacity = 0.1;
+            }
         })
     }
     container.appendChild(toAdd);
