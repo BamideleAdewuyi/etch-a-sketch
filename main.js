@@ -9,7 +9,7 @@ function randomRGB() {
 
 // Fade in
 function fadeIn(opac) {
-
+    return opac + 0.1;
 };
 
 // Function for creating grid
@@ -23,12 +23,9 @@ function createGrid(squares) {
         newSquare.style.width = 500/squares +"px";
         toAdd.appendChild(newSquare);
         newSquare.addEventListener("mouseover", () => {
-            newSquare.style.backgroundColor = `rgb(${randomRGB()}, ${randomRGB()}, ${randomRGB()})`;
-            let opac = newSquare.style.opacity;
-            if (opac < 1) {
-                opac +=0.1;
-                newSquare.style.opacity = opac;
-            }
+            const currentOpacity = newSquare.style.opacity;
+            newSquare.style.background = `rgb(${randomRGB()}, ${randomRGB()}, ${randomRGB()})`;
+            newSquare.style.opacity = Number(newSquare.style.opacity + 0.1);
         })
     }
     container.appendChild(toAdd);
