@@ -12,6 +12,9 @@ function createGrid(squares) {
         newSquare.style.height = 500/squares + "px";
         newSquare.style.width = 500/squares +"px";
         toAdd.appendChild(newSquare);
+        newSquare.addEventListener("mouseover", () => {
+            newSquare.style.backgroundColor = "black";
+        })
     }
     container.appendChild(toAdd);
 };
