@@ -4,7 +4,7 @@ const reset = document.querySelector("button");
 
 // Random rgb
 function randomRGB() {
-
+    return Math.floor(Math.random() * 256);
 };
 
 // Function for creating grid
