@@ -7,6 +7,8 @@ function randomRGB() {
     return Math.floor(Math.random() * 256);
 };
 
+
+
 // Function for creating grid
 function createGrid(squares) {
     const toAdd = document.createDocumentFragment();
@@ -19,7 +21,11 @@ function createGrid(squares) {
         toAdd.appendChild(newSquare);
         newSquare.addEventListener("mouseover", () => {
             newSquare.style.backgroundColor = `rgb(${randomRGB()}, ${randomRGB()}, ${randomRGB()})`;
-            newSquare.style.opacity += 0.1;
+            let opac = newSquare.style.opacity;
+            if (opac < 1) {
+                opac +=0.1;
+                newSquare.style.opacity = opac;
+            }
         })
     }
     container.appendChild(toAdd);
