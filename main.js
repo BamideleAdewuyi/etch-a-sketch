@@ -18,7 +18,7 @@ function createGrid(squares) {
         newSquare.style.width = 500/squares +"px";
         toAdd.appendChild(newSquare);
         newSquare.addEventListener("mouseover", () => {
-            newSquare.style.backgroundColor = "black";
+            newSquare.style.backgroundColor = `rgb(${randomRGB()}, ${randomRGB()}, ${randomRGB()})`;
         })
     }
     container.appendChild(toAdd);
@@ -38,10 +38,5 @@ reset.addEventListener("click", () => {
         alert("You must enter a number from 1 to 100");
     };
 });
-
-
-
-
-
 
 createGrid(16);
