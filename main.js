@@ -1,5 +1,6 @@
-// Container
+// Html objects
 const container = document.querySelector("#container");
+const reset = document.querySelector("button");
 
 // Function for creating grid
 function createGrid(squares) {
@@ -16,7 +17,3 @@ function createGrid(squares) {
 }
 
 createGrid(16);
-console.log("Height, width: " + window.innerHeight/16, window.innerWidth/16)
-// console.log(document.getElementById("square4").style.height);
-console.log(document.getElementById("container").style.width)
-// Height: 59.875 Width: 17.5625
