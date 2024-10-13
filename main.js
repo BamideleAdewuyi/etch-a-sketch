@@ -2,6 +2,11 @@
 const container = document.querySelector("#container");
 const reset = document.querySelector("button");
 
+// Random rgb
+function randomRGB() {
+
+};
+
 // Function for creating grid
 function createGrid(squares) {
     const toAdd = document.createDocumentFragment();
