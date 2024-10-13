@@ -26,7 +26,7 @@ function createGrid(squares) {
 
 // Button listener
 reset.addEventListener("click", () => {
-    let num = prompt("Enter number of squares for new grid from 1 to 100");
+    let num = Math.floor(prompt("Enter number of squares for new grid from 1 to 100"));
     if (num > 0 && num < 101) {
         while (document.getElementsByClassName('square')[0]) {
             document.getElementsByClassName('square')[0].remove();
