@@ -7,11 +7,6 @@ function randomRGB() {
     return Math.floor(Math.random() * 256);
 };
 
-// Fade in
-function fadeIn(opac) {
-    return opac + 0.1;
-};
-
 // Function for creating grid
 function createGrid(squares) {
     const toAdd = document.createDocumentFragment();
