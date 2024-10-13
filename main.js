@@ -7,7 +7,10 @@ function randomRGB() {
     return Math.floor(Math.random() * 256);
 };
 
+// Fade in
+function fadeIn(opac) {
 
+};
 
 // Function for creating grid
 function createGrid(squares) {
