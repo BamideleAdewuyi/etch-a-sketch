@@ -19,6 +19,7 @@ function createGrid(squares) {
         toAdd.appendChild(newSquare);
         newSquare.addEventListener("mouseover", () => {
             newSquare.style.backgroundColor = `rgb(${randomRGB()}, ${randomRGB()}, ${randomRGB()})`;
+            newSquare.style.opacity += 0.1;
         })
     }
     container.appendChild(toAdd);
