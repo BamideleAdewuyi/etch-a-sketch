@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid red;
+}
+
 body {
   height: 100vh;
   width: 100vw;
@@ -21,4 +25,11 @@ body {
   margin: 0;
   height: 500px;
   width: 500px;
+}
+
+button {
+  height: 40px;
+  width: 70px;
+  position: absolute;
+  top: 520px;
 }
