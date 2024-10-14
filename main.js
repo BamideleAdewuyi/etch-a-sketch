@@ -1,6 +1,7 @@
 // Html objects
 const container = document.querySelector("#container");
-const reset = document.querySelector("button");
+const reset = document.querySelector("#reset");
+const toggleColours = document.querySelector("#colour-switch");
 
 // Random rgb
 function randomRGB() {
@@ -31,7 +32,7 @@ function createGrid(squares) {
     container.appendChild(toAdd);
 };
 
-// Button listener
+// Button listeners
 reset.addEventListener("click", () => {
     let num = Math.floor(prompt("Enter number of squares for new grid from 1 to 100"));
     if (num > 0 && num < 101) {
@@ -45,5 +46,7 @@ reset.addEventListener("click", () => {
         alert("You must enter a number from 1 to 100");
     };
 });
+
+
 
 createGrid(16);
