@@ -1,7 +1,6 @@
 // Html objects
 const container = document.querySelector("#container");
 const reset = document.querySelector("#reset");
-const toggleColours = document.querySelector("#colour-switch");
 
 // Random rgb
 function randomRGB() {
@@ -46,17 +45,5 @@ reset.addEventListener("click", () => {
         alert("You must enter a number from 1 to 100");
     };
 });
-
-toggleColours.addEventListener("click", () => {
-    let grids = document.querySelectorAll(".square");
-    grids.forEach((grid) => {
-        if (grid.style.background == `rgb(0, 0, 0)`) {
-            grid.style.background = `rgb(${randomRGB()}, ${randomRGB()}, ${randomRGB()})`;
-        }
-        else {
-            grid.style.background = `rgb(0, 0, 0)`;
-        }
-    })
-})
 
 createGrid(16);
