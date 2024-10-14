@@ -27,9 +27,10 @@ body {
   width: 500px;
 }
 
-button {
+button#reset {
   height: 40px;
   width: 70px;
   position: absolute;
   top: 520px;
 }
+
