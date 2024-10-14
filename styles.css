@@ -28,6 +28,10 @@ body {
 }
 
 button#reset {
+  left: 200px;
+}
+
+button {
   height: 40px;
   width: 70px;
   position: absolute;
