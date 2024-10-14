@@ -47,6 +47,8 @@ reset.addEventListener("click", () => {
     };
 });
 
-
+toggleColours.addEventListener("click", () => {
+    
+})
 
 createGrid(16);
