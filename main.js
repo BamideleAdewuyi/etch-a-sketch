@@ -48,7 +48,15 @@ reset.addEventListener("click", () => {
 });
 
 toggleColours.addEventListener("click", () => {
-    
+    let grids = document.querySelectorAll(".square");
+    grids.forEach((grid) => {
+        if (grid.style.background == `rgb(0, 0, 0)`) {
+            grid.style.background = `rgb(${randomRGB()}, ${randomRGB()}, ${randomRGB()})`;
+        }
+        else {
+            grid.style.background = `rgb(0, 0, 0)`;
+        }
+    })
 })
 
 createGrid(16);
