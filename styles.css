@@ -27,14 +27,18 @@ body {
   width: 500px;
 }
 
-button#reset {
-  left: 200px;
-}
-
 button {
   height: 40px;
   width: 70px;
   position: absolute;
   top: 520px;
+}
+
+button#reset {
+  left: 200px;
+}
+
+button#colour-switch {
+  right: 200px;
 }
 
